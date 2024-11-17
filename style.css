@@ -1,0 +1,161 @@
+*, html, body{
+    margin:0;
+    padding: 0;
+    font-family:"Roboto", sans-serif;
+}
+
+.Dbody{
+    width:100%;
+    height: 100vh;
+    background-color: darkslategrey;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+}
+
+.brand{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.firstname{
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.lastname{
+    font-size:25px;
+    font-weight: 700;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation>li{
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navigation>li:hover{
+    background-color: rgb(66, 48, 48);
+    border-radius: 20px;
+    transition: ease-in-out;
+}
+.navigation>li>a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.dalem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100vh;
+}
+
+.jalal-text{
+    font-size: 5em;
+    font-weight: 1000;
+    fill: darkslategray;
+    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); */
+    transform: uppercase;
+    animation: stroke 5s infinite alternate;
+}
+
+@keyframes stroke {
+    0% {
+        stroke: lightcyan;
+        stroke-width: 0;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+    }
+    70% {
+        stroke: aqua;
+    }
+    80% {
+        stroke: lightgreen;
+        stroke-width: 3;
+    }
+    100% {
+        stroke: lightseagreen;
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+    }
+}
+
+.sapaan{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    animation: sapaanAnimation 2s ease-in-out;
+}
+
+@keyframes sapaanAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1
+    }
+}
+
+.search{
+    padding:30px;
+    width: 70%;
+}
+
+.search__input{
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 99px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.search__input input{
+    flex: 1;
+    padding: 10px;
+    font-size: 19px;
+    border: none;
+    outline: none;
+}
+
+.search .search__input .material-icons:hover{
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px;
+    width:100%;
+    height: 45px;
+    background-color:tomato;
+    bottom:0;
+    left:0;
+    position: fixed;
+}
+
+.text-run{
+    border:1px solid black;
+}
